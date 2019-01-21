@@ -6,18 +6,29 @@
 		body
 		{
 			margin: 0;
+
 			border: 10px solid red;
+
 		}
 
 		img{
 			max-width: 100%;
 			vertical-align: top;
+			/*display: none;*/
+		}
+
+		img#responsive{
+			display: none;
+		}
+
+		@media screen and (max-width: 768px){
+			img#responsive {
+				display: block;
+			}
 		}
 	</style>
 </head>
 <body>
-<img src="header.jpg" alt="">
-<img src="hero.jpg">
-<img src="acustica.jpg">
+<img src="invie-responsive.png">
 </body>
 </html>
